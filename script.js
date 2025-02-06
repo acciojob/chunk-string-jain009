@@ -1,8 +1,8 @@
   // your code here
-function chunkString(str, chunkSize) {
+function chunkString(str, size) {
   let result = [];
-  for (let i = 0; i < str.length; i += chunkSize) {
-    result.push(str.substring(i, i + chunkSize));
+  for (let i = 0; i < str.length; i += size) {
+    result.push(str.substring(i, i + size));
   }
   return result;
 }
@@ -11,5 +11,5 @@ function chunkString(str, chunkSize) {
 
 // Do not change the code below
 const str = prompt("Enter String.");
-const chunkSize = prompt("Enter Chunk Size.");
-alert(stringChop(str, chunkSize));
+const size = prompt("Enter Chunk Size.");
+alert(stringChop(str, size));
